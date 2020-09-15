@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="/css/game.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <script src="/js/jquery.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/js/game.js"></script>
+</head>
+<body class="text-center">
+    <h1 style="font-family: cursive;">Rock Paper Scissor</h1>
+    <h3>You choose:</h3>
+    <div class="images">
+        <input type="image" img src="/images/Stone.jfif" alt="Snow" class="demo1" style="width:13%" onclick="buttonEvent('rock')">
+        <input type="image" img src="/images/Paper.png" alt="Forest" class="demo2" style="width:13%" onclick="buttonEvent('paper')">
+        <input type="image" img src="/images/Scissor.jfif" alt="Mountains" class="demo3" style="width:13%" onclick="buttonEvent('scissor')">
+    </div>
+    <div>
+        <div class="playerClass">
+            You chose: <x class="font-weight-bold" id="player"></x>
+            Computer chose: <span class="font-weight-bold" id="computer"></span>
+            <span class="font-weight-bold result" id="result"></span>
+        </div><br>
+        <div class="scoreboard-placement">
+            <div id="scoreboard">
+              <p class="scoreboard-row" id="playerWins"><strong>Your Victories: </strong><span id="wins">0</span></p>
+              <p class="scoreboard-row" id="playerDraws"><strong>Total Draws:  </strong><span id="draws">0</span></p>
+              <p class="scoreboard-row" id="playerLosses"><strong>Your defeats: </strong><span id="losses">0</span></p>
+            </div>
+          </div>
+          <p id="reset-scores" onclick="resetScore()">Reset scores</p>
+        <span class="cr">&#169 Developed By: Swapnil Shinde</span>
+    </div>
+
+</body>
+</html>
